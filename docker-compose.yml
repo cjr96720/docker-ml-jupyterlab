@@ -7,4 +7,4 @@ services:
       - 8888:8888
     volumes:
       - ./projects/:/home/devuser/projects
-    command: jupyter lab
+    command: jupyter lab --port=8888
