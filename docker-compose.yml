@@ -1,0 +1,10 @@
+version: "3.7"
+services:
+  jupyterlab:
+    container_name: jupyterlab
+    build: .
+    ports:
+      - 8888:8888
+    volumes:
+      - ./projects/:/home/devuser/projects
+    command: jupyter lab
